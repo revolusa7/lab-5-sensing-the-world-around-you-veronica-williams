@@ -1,5 +1,5 @@
-# Lab 4: Timers and PWM
-In this lab, you will begin to use one of the most fundamental control techniques for a microcontroller. You can blink an LED, and you can blink it at a particular rate, but so far you have done symmetric waves. This means that you have you output be on and off for the same amount of time. What do you think will happen if you, say, keep the LED turned off for only 10% of the time instead of 50%? And what about those buttons, have you already had issues where your button accidentally triggers your code multiple times with interrupts enabled?
+# Lab 5: Getting a sense of the world around you
+So far, you have had really only looked at what your microcontroller has inside of it and how to get internal peripherals to behave with one another. Now it is time to start thinking about how the microcontroller can see the world. In previous labs, you have brought your controller from the mouth of the stork (or from the package from TI), fed it electrons, got it to say its first words, and helped it make its first steps. You have spent many sleepless night consoling your quintuplets when they threw tantrums, sometimes making you question your commitment to become a Junior ECE; but now it is time to send your little prodigies to kindergarten to make you proud. They will learn all about the world around them, not just the binary conditions of your dreary lifestyle. 
 
 ## Goals for the lab:
 By the end of this lab, you should:

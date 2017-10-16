@@ -3,15 +3,16 @@ So far, you have had really only looked at what your microcontroller has inside 
 
 ## Goals for the lab:
 By the end of this lab, you should:
-* Debounce a switch input using the Timer Modules and interrupts
-* Implement Software based PWM using the built in Timer Modules
-* Implement Hardware based PWM using P1SEL and the timer modules
+* Interface your microcontrollers to multiple sensor types (voltage, current, and resistive)
+* Design Multiple types of signal conditioning circuits for these types of sensors.
+* Access and set up the internal ADC's
+* Design a basic breakout board for the MSP430FR2311
 
 ## Deliverables
-By the end of the lab, you will need to provide at a minimum well documented main.c files for *EACH* of the 5 development platforms with accompanying README files which explain exactly how to implement your code. The reason I say minimum is because there are going to be some recommended further practice that is not mandatory, but heavily recommended, especially if you are finishing this lab in only a couple hours. So come Milestone time, I should see 4 folders in your repository with the following titles:
-* Debouncing
-* Software PWM
-* Hardware PWM
+By the end of the lab, you will need to provide at a minimum well documented main.c files for *EACH* of the 5 development platforms. You will also need to provide a README at the top of each section in your repository. The reason I say minimum is because there are going to be some recommended further practice that is not mandatory, but heavily recommended, especially if you are finishing this lab in only a couple hours. So come Milestone time, I should see 3 folders in your repository with the following titles:
+* PCB Design
+* Sensors and Signal Conditioning
+* Visualizing Data
 
 each with the .c and README files for each board. The .c and README files should include the minimum amount of work as well as any extra work that you have done. Each processor should have its project saved in its own folder in each part of the assignment, however you only need one README per part of the assignment.
 

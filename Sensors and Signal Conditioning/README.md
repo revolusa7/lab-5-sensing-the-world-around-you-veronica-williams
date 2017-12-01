@@ -1,23 +1,23 @@
 # Sensors and Signal Conditioning
 
 
-PURPOSE: 
+##PURPOSE: 
 The purpose of this lab was to combine hardware and software to read voltage outputs from 3 different sensors. The sensors that will be used are 1) Photoresistor, 2) Thermistor, 3) Phototransistor. The Photoresistor acts as a variable resistor. The value of the resistance will be dependent on the intensity of the light that hits the sensor. The thermistor will output a voltage that correlates to the ambient temperature in degrees Celsius. The Phototransistor will allow more current to pass as the intensity of light that hits the sensor increases.  The code that will be used will combine UART and ADC conversions. The ADC value of the voltage will be transmitted to Realterm through UART.
 
-PHOTORESISTOR CIRCUIT:
+##PHOTORESISTOR CIRCUIT:
 The photoresistor circuit will be a voltage divider circuit with the input voltage to the MSP430 being between the two resistors. The value of the photoresistor will change depending on the intensity of the light. When light is hitting the resistor, the resistance decreases causing a higher voltage. If the light decreases, the resistance increases. The resistance values can range from 1M ohm when no light is hitting the resistor to 100 Ohms when light is hitting it.  The voltage source will be VCC from the MSP430  which is 3.6V for both the MSP430G2553 and the MSP430FR6989. The circuits are shown below with simulations.
 
-THERMISTOR CIRCUIT:
+##THERMISTOR CIRCUIT:
 The Thermistor circuit will output the voltage that relates to degrees Celsius. If the temperature in a room is 20 degrees C, the output voltage will be .2V. The LM35 DT has three pins. One is for VCC(3.6V), GND, and the last pin will be the input to the ADC pin on the MSP430. The circuits are shown below. 
 
 
-PHOTOTRANSISTOR CIRCUIT:
+##PHOTOTRANSISTOR CIRCUIT:
 The circuit for the phototransistor needs to output a voltage from the changing current from the Transistor. To do this a Transimpedance amplifier will be used.  The circuit and the simulations are shown below.
 
 
 
 
-MSP430G2553 Code:
+##MSP430G2553 Code:
 For the MSP430G2553, the input ADC pin will be pin 1.3. The RX and TX pins for UART will be 1.1 and 1.2 respectively.  To configure ADC in the msp430, the following code will be used.
 In main:
 P1SEL |= BIT3;                    // Set ADC input to 1.3
